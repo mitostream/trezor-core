@@ -88,7 +88,10 @@ make vendorheader build_boardloader build_bootloader build_firmware
 
 ### OS X
 
-1. Download [gcc-arm-none-eabi](https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/)
-2. Follow the [install instructions](https://launchpadlibrarian.net/287100883/readme.txt)
-3. To install OpenOCD, run `brew install open-ocd`
-4. Run `make vendorheader build_boardloader build_bootloader build_firmware`
+```sh
+brew cask install gcc-arm-embedded
+
+brew install open-ocd
+
+make vendorheader build_boardloader build_bootloader build_firmware
+```
